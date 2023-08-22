@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBars, FaShoppingCart, FaTimes } from "react-icons/fa";
+import Library from "../assets/Library.svg";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
@@ -7,7 +8,7 @@ const Nav = () => {
     <nav>
       <div className='nav__container'>
         <Link to=''>
-          <FaBars />
+          <img src={Library} className="logo"/>
         </Link>
         <ul className='nav__links'>
           <li className='nav__list'>
@@ -21,11 +22,11 @@ const Nav = () => {
             </Link>
           </li>
           <button className='btn__menu'>
-            <FaBars />
+            <FaBars className="bars__icon" />
           </button>
           <li className='nav__icon'>
             <Link to='/cart' className='nav__link'>
-              <FaShoppingCart />
+              <FaShoppingCart className="cart__icon" />
             </Link>
           </li>
         </ul>
